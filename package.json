@@ -1,0 +1,19 @@
+{
+  "name": "sentry-auto-fix-agent",
+  "version": "1.0.0",
+  "description": "AI agent that auto-fixes Flutter errors from Sentry and creates Bitbucket PRs",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "openai": "^4.70.0",
+    "@sentry/node": "^8.0.0",
+    "dotenv": "^16.4.0",
+    "crypto": "^1.0.1",
+    "winston": "^3.14.0"
+  }
+}
